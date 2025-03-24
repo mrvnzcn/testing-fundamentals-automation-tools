@@ -1,0 +1,111 @@
+{
+  "id": "29cb8aa1-44ae-4ed2-8fb1-1e9e55af198a",
+  "version": "2.0",
+  "name": "subscribe-newsletter",
+  "url": "https://academy.eteration.com",
+  "tests": [{
+    "id": "2b60ab01-3a7f-4868-93b8-810acc8859d0",
+    "name": "subscribe",
+    "commands": [{
+      "id": "3ccd9ab8-4e8e-49e0-bf3f-8c6ad158a7c6",
+      "comment": "",
+      "command": "open",
+      "target": "/tr",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0a6de7c-508e-49be-a373-25846cb639fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x732",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c64b978-a135-4f94-a904-75dd3e66c6d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.banner > .container",
+      "targets": [
+        ["css=.banner > .container", "css:finder"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e2d65db-fdcd-4bd4-b738-391307bd88a9",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/div/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ac2de8b-e7f8-4cfd-8e68-24ca79823545",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(8)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/div/div/form/p[2]/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "NAME"
+    }, {
+      "id": "79d5aa4f-cef1-4723-ad5d-a76ae3484b83",
+      "comment": "",
+      "command": "type",
+      "target": "name=surname",
+      "targets": [
+        ["name=surname", "name"],
+        ["css=input:nth-child(14)", "css:finder"],
+        ["xpath=//input[@name='surname']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/div/div/form/p[2]/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "SURNAME"
+    }, {
+      "id": "6ae1e37b-955c-40a5-a2dd-809f4608f0e4",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(20)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/div/div/form/p[2]/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "mail@gmail.com"
+    }, {
+      "id": "640970cb-4354-4e71-a0db-14f1e7a8e924",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(20)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[@id='__next']/div[2]/div/div/div/div/form/p[2]/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "c708aa96-994f-410b-a3dc-38c20b61b4a3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2b60ab01-3a7f-4868-93b8-810acc8859d0"]
+  }],
+  "urls": ["https://academy.eteration.com/"],
+  "plugins": []
+}

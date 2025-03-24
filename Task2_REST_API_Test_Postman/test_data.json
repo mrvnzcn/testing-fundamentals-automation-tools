@@ -1,0 +1,17 @@
+[
+  {
+    "userId": 1,
+    "title": "Test Title 1",
+    "body": "This is a test body 1"
+  },
+  {
+    "userId": 2,
+    "title": "Test Title 2",
+    "body": "This is a test body 2"
+  },
+  {
+    "userId": 3,
+    "title": "Test Title 3",
+    "body": "This is a test body 3"
+  }
+]
